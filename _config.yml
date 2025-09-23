@@ -21,11 +21,13 @@
 title: Ujjwal Gulecha
 email: me@ujjwalgulecha.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Welcome to Ujjwal Gulecha's website!
+  Software Engineer at DoorDash passionate about scalable systems, algorithm design, and machine learning.
+  Building innovative solutions to complex problems.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ujjwalgulecha
-github_username:  ujjwalgulecha
+github_username: ujjwalgulecha
+linkedin_username: ujjwalgulecha
 
 # Build settings
 theme: minima

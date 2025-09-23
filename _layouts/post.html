@@ -1,0 +1,155 @@
+---
+layout: default
+---
+
+<section class="section">
+    <div class="section-container">
+        <article style="max-width: 800px; margin: 0 auto;">
+            <header style="text-align: center; margin-bottom: 3rem; border-bottom: 1px solid var(--border-color); padding-bottom: 2rem;">
+                <div class="blog-meta" style="margin-bottom: 1rem;">
+                    <time datetime="{{ page.date | date: '%Y-%m-%d' }}">
+                        {{ page.date | date: "%B %d, %Y" }}
+                    </time>
+                    {% if page.categories.size > 0 %}
+                        <span> • </span>
+                        {% for category in page.categories %}
+                            <span class="category" style="background: var(--primary-color); color: white; padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.875rem;">{{ category }}</span>{% unless forloop.last %} {% endunless %}
+                        {% endfor %}
+                    {% endif %}
+                </div>
+                <h1 style="font-size: 2.5rem; font-weight: 700; color: var(--text-primary); margin-bottom: 1rem;">{{ page.title }}</h1>
+                {% if page.description %}
+                    <p style="font-size: 1.1rem; color: var(--text-secondary); line-height: 1.6;">{{ page.description }}</p>
+                {% endif %}
+            </header>
+
+            <div class="post-content" style="line-height: 1.8; color: var(--text-primary);">
+                {{ content }}
+            </div>
+
+            <footer style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                    <div>
+                        {% if page.tags.size > 0 %}
+                            <strong style="color: var(--text-secondary);">Tags:</strong>
+                            {% for tag in page.tags %}
+                                <span style="background: var(--bg-secondary); padding: 0.25rem 0.5rem; border-radius: 0.5rem; font-size: 0.875rem; margin-left: 0.5rem;">{{ tag }}</span>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                    <div>
+                        <a href="{{ '/blog' | relative_url }}" class="btn btn-secondary">
+                            <i class="fas fa-arrow-left"></i>
+                            Back to Blog
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </article>
+    </div>
+</section>
+
+<style>
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+    color: var(--text-primary);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.post-content h1 {
+    font-size: 2rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+.post-content h2 {
+    font-size: 1.75rem;
+    color: var(--primary-color);
+}
+
+.post-content h3 {
+    font-size: 1.5rem;
+}
+
+.post-content p {
+    margin-bottom: 1.5rem;
+}
+
+.post-content ul,
+.post-content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+}
+
+.post-content li {
+    margin-bottom: 0.5rem;
+}
+
+.post-content blockquote {
+    border-left: 4px solid var(--primary-color);
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    padding: 1rem 1.5rem;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+}
+
+.post-content code {
+    background: var(--bg-secondary);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-family: 'Monaco', 'Menlo', monospace;
+    font-size: 0.875rem;
+    border: 1px solid var(--border-color);
+}
+
+.post-content pre {
+    background: var(--bg-secondary);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    overflow-x: auto;
+    margin: 2rem 0;
+    border: 1px solid var(--border-color);
+}
+
+.post-content pre code {
+    background: none;
+    padding: 0;
+    border: none;
+    font-size: 0.875rem;
+}
+
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-medium);
+    margin: 2rem 0;
+}
+
+.post-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+}
+
+.post-content th,
+.post-content td {
+    border: 1px solid var(--border-color);
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.post-content th {
+    background: var(--bg-secondary);
+    font-weight: 600;
+}
+</style>

@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ujjwal Gulecha</title>
-    <meta name="description" content="Software Engineer at DoorDash passionate about scalable systems, algorithm design, and machine learning. Building innovative solutions to complex problems.">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -20,11 +20,11 @@
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <a href="/" class="nav-brand">Ujjwal Gulecha</a>
+            <a href="{{ '/' | relative_url }}" class="nav-brand">{{ site.title }}</a>
             <div class="nav-menu" id="nav-menu">
-                <a href="/" class="nav-link">Home</a>
-                <a href="/blog" class="nav-link">Blog</a>
-                <a href="/contact" class="nav-link">Contact</a>
+                <a href="{{ '/' | relative_url }}" class="nav-link">Home</a>
+                <a href="{{ '/blog' | relative_url }}" class="nav-link">Blog</a>
+                <a href="{{ '/contact' | relative_url }}" class="nav-link">Contact</a>
             </div>
             <div class="nav-toggle" id="nav-toggle">
                 <span class="bar"></span>
@@ -35,49 +35,29 @@
     </nav>
 
     <main class="main-content">
-        <style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
-
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
-
+        {{ content }}
     </main>
 
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-content">
-                <p>&copy; 2025 Ujjwal Gulecha. All rights reserved.</p>
+                <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
                 <div class="social-links">
-                    
-                    <a href="https://github.com/ujjwalgulecha" target="_blank" rel="noopener noreferrer">
+                    {% if site.github_username %}
+                    <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-github"></i>
                     </a>
-                    
-                    
-                    <a href="https://linkedin.com/in/ujjwalgulecha" target="_blank" rel="noopener noreferrer">
+                    {% endif %}
+                    {% if site.linkedin_username %}
+                    <a href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    
+                    {% endif %}
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="/assets/js/main.js"></script>
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </body>
 </html>

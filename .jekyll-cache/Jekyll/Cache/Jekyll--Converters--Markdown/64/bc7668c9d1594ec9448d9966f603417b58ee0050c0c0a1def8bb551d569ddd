@@ -1,10 +1,4 @@
----
-layout: default
-title: About
-permalink: /about/
----
-
-<section class="section">
+I"Û<section class="section">
     <div class="section-container">
         <h1 class="section-title">About Me</h1>
 
@@ -28,7 +22,7 @@ permalink: /about/
                 logistical assistance with data exchange," reflecting my commitment to innovative problem-solving.
             </p>
 
-            <h2 style="color: var(--primary-color); margin-bottom: 1rem;">Achievements & Recognition</h2>
+            <h2 style="color: var(--primary-color); margin-bottom: 1rem;">Achievements &amp; Recognition</h2>
             <ul style="margin-bottom: 2rem; line-height: 1.6;">
                 <li>Multiple awards in ACM ICPC programming contests</li>
                 <li>Winner in IEEE XTREME programming competitions</li>
@@ -74,7 +68,7 @@ permalink: /about/
             </p>
 
             <div style="text-align: center; margin-top: 3rem;">
-                <a href="mailto:{{ site.email }}" class="btn btn-primary">
+                <a href="mailto:me@ujjwalgulecha.com" class="btn btn-primary">
                     <i class="fas fa-envelope"></i>
                     Get In Touch
                 </a>
@@ -86,3 +80,4 @@ permalink: /about/
         </div>
     </div>
 </section>
+:ET
