@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Software Engineer at Anthropic passionate about scalable systems, algorithm design, and machine learning.
   Building innovative solutions to complex problems.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ujjwalgulecha.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ujjwalgulecha
 github_username: ujjwalgulecha
 linkedin_username: ujjwalgulecha
@@ -32,6 +32,34 @@ linkedin_username: ujjwalgulecha
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO settings
+author: Ujjwal Gulecha
+lang: en_US
+
+# Social defaults
+social:
+  name: Ujjwal Gulecha
+  links:
+    - https://twitter.com/ujjwalgulecha
+    - https://github.com/ujjwalgulecha
+    - https://linkedin.com/in/ujjwalgulecha
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Ujjwal Gulecha"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
 
 # Markdown processor
 markdown: kramdown

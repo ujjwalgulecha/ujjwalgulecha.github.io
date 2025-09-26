@@ -1,8 +1,49 @@
 ---
 layout: default
 title: Blog
+description: "Read about technology, engineering, algorithms, and more from Ujjwal Gulecha - Software Engineer at Anthropic"
 permalink: /blog/
 ---
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="Read about technology, engineering, algorithms, and more from Ujjwal Gulecha - Software Engineer at Anthropic">
+<meta name="keywords" content="technology blog, software engineering, algorithms, machine learning, performance optimization, distributed systems">
+
+<!-- Open Graph Meta Tags -->
+<meta property="og:title" content="Blog - {{ site.title }}">
+<meta property="og:description" content="Read about technology, engineering, algorithms, and more from Ujjwal Gulecha - Software Engineer at Anthropic">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ site.url }}/blog/">
+<meta property="og:site_name" content="{{ site.title }}">
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Blog - {{ site.title }}">
+<meta name="twitter:description" content="Read about technology, engineering, algorithms, and more from Ujjwal Gulecha - Software Engineer at Anthropic">
+{% if site.twitter_username %}
+<meta name="twitter:site" content="@{{ site.twitter_username }}">
+{% endif %}
+
+<!-- Structured Data (JSON-LD) for Blog -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "{{ site.title }} - Blog",
+  "description": "Read about technology, engineering, algorithms, and more from Ujjwal Gulecha - Software Engineer at Anthropic",
+  "url": "{{ site.url }}/blog/",
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.title }}",
+    "url": "{{ site.url }}"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "{{ site.title }}",
+    "url": "{{ site.url }}"
+  }
+}
+</script>
 
 <section class="section">
     <div class="section-container">
