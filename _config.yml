@@ -21,7 +21,7 @@
 title: Ujjwal Gulecha
 email: me@ujjwalgulecha.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Software Engineer at DoorDash passionate about scalable systems, algorithm design, and machine learning.
+  Software Engineer at Anthropic passionate about scalable systems, algorithm design, and machine learning.
   Building innovative solutions to complex problems.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -30,9 +30,17 @@ github_username: ujjwalgulecha
 linkedin_username: ujjwalgulecha
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
+
+# Markdown processor
+markdown: kramdown
+highlighter: rouge
+
+# Sass settings
+sass:
+  sass_dir: _sass
+  style: compressed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
