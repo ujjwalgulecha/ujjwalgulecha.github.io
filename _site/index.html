@@ -22,9 +22,10 @@
         <div class="nav-container">
             <a href="/" class="nav-brand">Ujjwal Gulecha</a>
             <div class="nav-menu" id="nav-menu">
-                <a href="/" class="nav-link">Home</a>
-                <a href="/blog" class="nav-link">Blog</a>
-                <a href="/contact" class="nav-link">Contact</a>
+                <a href="/" class="nav-link active">Home</a>
+                <a href="/about" class="nav-link ">About Me</a>
+                <a href="/blog" class="nav-link ">Blog</a>
+                <a href="/contact" class="nav-link ">Contact</a>
             </div>
             <div class="nav-toggle" id="nav-toggle">
                 <span class="bar"></span>
@@ -35,358 +36,77 @@
     </nav>
 
     <main class="main-content">
-        <section class="hero">
-    <div class="hero-container">
-        <div class="hero-content">
-            <div class="hero-avatar-container">
-                <div class="hero-avatar-placeholder">
-                    <i class="fas fa-user"></i>
+        <section class="section blog-section" style="padding-top: 2rem;">
+    <div class="section-container">
+        <h2 class="section-title">Recent Blog Posts</h2>
+        <p class="section-subtitle">Thoughts on software engineering, performance optimization, and technology</p>
+
+        <div class="blog-posts">
+            
+            <article class="blog-post-card">
+                <div class="post-meta">
+                    <time class="post-date">September 23, 2024</time>
+                    <div class="post-categories">
+                        
+                            <span class="category-tag">performance</span>
+                        
+                            <span class="category-tag">systems</span>
+                        
+                            <span class="category-tag">engineering</span>
+                        
+                    </div>
                 </div>
-            </div>
-            <h1 class="hero-title">Hi, I'm Ujjwal Gulecha</h1>
-            <p class="hero-subtitle">Software Engineer at DoorDash</p>
-            <p class="hero-description">
-                Building scalable systems that serve millions of users, passionate about algorithms, and exploring the cutting edge of machine learning.
-            </p>
-            <div class="hero-stats">
-                <div class="stat">
-                    <div class="stat-number">8+</div>
-                    <div class="stat-label">Years Experience</div>
+                <h3 class="post-title">
+                    <a href="/performance/systems/engineering/2024/09/23/engineering-sub-second-page-loads-at-scale.html">Engineering Sub-Second Page Loads at Scale: A Systems Approach</a>
+                </h3>
+                <p class="post-description">
+                    How we achieved sub-second page loads for 50M+ monthly requests through systematic performance optimization, going beyond basic caching to orchestrate a coherent high-performance system.
+                </p>
+                <div class="post-tags">
+                    
+                        <span class="tag">performance-optimization</span>
+                    
+                        <span class="tag">scalability</span>
+                    
+                        <span class="tag">backend</span>
+                    
                 </div>
-                <div class="stat">
-                    <div class="stat-number">1</div>
-                    <div class="stat-label">Patent Filed (Pending)</div>
-                </div>
-            </div>
-            <div class="cta-buttons">
-                <a href="#experience" class="btn btn-primary">
-                    <i class="fas fa-rocket"></i>
-                    Explore My Work
+                <a href="/performance/systems/engineering/2024/09/23/engineering-sub-second-page-loads-at-scale.html" class="read-more">
+                    Read More <i class="fas fa-arrow-right"></i>
                 </a>
-                <a href="/blog" class="btn btn-secondary">
-                    <i class="fas fa-blog"></i>
-                    Read My Insights
+            </article>
+            
+            <article class="blog-post-card">
+                <div class="post-meta">
+                    <time class="post-date">December 03, 2019</time>
+                    <div class="post-categories">
+                        
+                            <span class="category-tag">jekyll</span>
+                        
+                            <span class="category-tag">update</span>
+                        
+                    </div>
+                </div>
+                <h3 class="post-title">
+                    <a href="/jekyll/update/2019/12/03/welcome.html">Welcome to my website!</a>
+                </h3>
+                <p class="post-description">
+                    
+
+                </p>
+                <div class="post-tags">
+                    
+                </div>
+                <a href="/jekyll/update/2019/12/03/welcome.html" class="read-more">
+                    Read More <i class="fas fa-arrow-right"></i>
                 </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section about-overview">
-    <div class="section-container">
-        <div class="about-hero">
-            <h2 class="about-hero-title">Who I Am</h2>
-            <p class="about-hero-text">
-                A passionate Software Engineer at Anthropic building systems that serve millions of users.
-                From competitive programming champion to industry innovator, I bring algorithmic thinking
-                and scalable system design to solve real-world problems.
-            </p>
+            </article>
+            
         </div>
 
-        <div class="background-showcase">
-            <div class="background-item">
-                <div class="bg-icon">
-                    <i class="fas fa-graduation-cap"></i>
-                </div>
-                <div class="bg-content">
-                    <h3>Education</h3>
-                    <p><strong>University of California, San Diego</strong> - Graduate Studies</p>
-                    <p><strong>R.V. College of Engineering, Bangalore</strong> - Bachelor's Degree</p>
-                </div>
-            </div>
+        
 
-            <div class="background-item">
-                <div class="bg-icon">
-                    <i class="fas fa-building"></i>
-                </div>
-                <div class="bg-content">
-                    <h3>Professional Experience</h3>
-                    <p><strong>Software Engineer @ Anthropic from 2025 - Current</strong></p>
-                    <p><strong>Software Engineer @ DoorDash from 2019 - 2025</strong></p>
-                    <p><strong>Software Engineer @ Groupon from 2017 - 2019</strong></p>
-                    </div>
-            </div>
-
-            <div class="background-item">
-                <div class="bg-icon">
-                    <i class="fas fa-trophy"></i>
-                </div>
-                <div class="bg-content">
-                    <h3>Competitive Programming</h3>
-                    <p><strong>ACM ICPC</strong> - Multiple Awards</p>
-                    <p><strong>IEEE XTREME</strong> - Competition Winner</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="expertise-showcase">
-            <h2 class="showcase-title">What I Do Best</h2>
-            <div class="expertise-items">
-                <div class="expertise-item">
-                    <div class="expertise-visual">
-                        <i class="fas fa-cogs"></i>
-                        <h3>Scalable Systems</h3>
-                    </div>
-                    <p>Designing distributed systems that handle millions of requests with high availability and performance. Experience with microservices, load balancing, and fault-tolerant architectures.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="achievements-showcase">
-            <h2 class="showcase-title">Key Achievements</h2>
-            <div class="achievements-grid-new">
-                <div class="achievement-card">
-                    <i class="fas fa-patent"></i>
-                    <h4>Patent Holder</h4>
-                    <p>Filed patent for logistical data exchange systems innovation</p>
-                </div>
-                <div class="achievement-card">
-                    <i class="fas fa-medal"></i>
-                    <h4>Competition Winner</h4>
-                    <p>Multiple awards in ACM ICPC and IEEE XTREME programming contests</p>
-                </div>
-                <div class="achievement-card">
-                    <i class="fas fa-users"></i>
-                    <h4>Professional Memberships</h4>
-                    <p>Active member of ACM, IEEE, and IAENG organizations</p>
-                </div>
-                <div class="achievement-card">
-                    <i class="fas fa-certificate"></i>
-                    <h4>Certified Professional</h4>
-                    <p>Java Memory Management, ElasticSearch, CockroachDB certifications</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="personal-touch">
-            <div class="personal-content">
-                <h3><i class="fas fa-globe"></i> Global Perspective</h3>
-                <p>
-                    I'm multilingual, speaking <strong>English, Hindi, and Marwadi</strong> natively, with elementary proficiency in Kannada.
-                    This linguistic diversity helps me connect with people from various backgrounds and brings a global perspective to my work.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="journey" class="section">
-    <div class="section-container">
-        <h2 class="section-title">My Journey</h2>
-        <p class="section-subtitle">From competitive programming to building systems at scale</p>
-
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-icon">
-                    <i class="fas fa-building"></i>
-                </div>
-                <div class="timeline-content">
-                    <h3>Software Engineer @ Anthropic</h3>
-                    <p class="timeline-date">Present</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-icon">
-                    <i class="fas fa-building"></i>
-                </div>
-                <div class="timeline-content">
-                    <h3>Software Engineer / Engineering Manager @ DoorDash</h3>
-                    <p class="timeline-date">2019 - 2025</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-icon">
-                    <i class="fas fa-graduation-cap"></i>
-                </div>
-                <div class="timeline-content">
-                    <h3>University of California, San Diego</h3>
-                    <p class="timeline-date">M.S in Computer Science</p>
-                    <p>Advanced studies in computer science, focusing on algorithm design and machine learning applications.</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-icon">
-                    <i class="fas fa-trophy"></i>
-                </div>
-                <div class="timeline-content">
-                    <h3>R.V College of Engineering</h3>
-                    <p class="timeline-date">B.E in Information Science</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section expertise-section">
-    <div class="section-container">
-        <h2 class="section-title">What I Specialize In</h2>
-        <div class="expertise-grid">
-            <div class="expertise-card">
-                <div class="expertise-icon">
-                    <i class="fas fa-cogs"></i>
-                </div>
-                <h3>Scalable Systems</h3>
-                <p>Designing and building distributed systems that handle millions of requests with high availability and performance.</p>
-                <div class="expertise-tech">
-                    <span>Distributed Systems</span>
-                    <span>Microservices</span>
-                    <span>Load Balancing</span>
-                </div>
-            </div>
-
-            <div class="expertise-card">
-                <div class="expertise-icon">
-                    <i class="fas fa-puzzle-piece"></i>
-                </div>
-                <h3>Algorithm Design</h3>
-                <p>Competitive programming background with a passion for elegant, efficient solutions to complex computational problems.</p>
-                <div class="expertise-tech">
-                    <span>Dynamic Programming</span>
-                    <span>Graph Theory</span>
-                    <span>Optimization</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section featured-projects">
-    <div class="section-container">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card featured">
-                <div class="project-header">
-                    <i class="fas fa-hands project-icon"></i>
-                    <h3>Sign Language Recognition</h3>
-                </div>
-                <p>Neural network system using RNNs to recognize and interpret sign language gestures, improving accessibility for the deaf community.</p>
-                <div class="project-tags">
-                    <span>Machine Learning</span>
-                    <span>RNN</span>
-                    <span>Accessibility</span>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-header">
-                    <i class="fas fa-comments project-icon"></i>
-                    <h3>Special Chat</h3>
-                </div>
-                <p>SMS application designed specifically for visually impaired users, enhancing communication accessibility.</p>
-                <div class="project-tags">
-                    <span>Mobile Development</span>
-                    <span>Accessibility</span>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-header">
-                    <i class="fas fa-database project-icon"></i>
-                    <h3>Distributed File System</h3>
-                </div>
-                <p>Robust distributed file system focusing on scalability, fault tolerance, and efficient data management.</p>
-                <div class="project-tags">
-                    <span>Distributed Systems</span>
-                    <span>Storage</span>
-                </div>
-            </div>
-        </div>
-
-        <div style="text-align: center; margin-top: 3rem;">
-            <a href="#detailed-background" class="btn btn-secondary">
-                <i class="fas fa-arrow-right"></i>
-                View My Projects & Detailed Background
-            </a>
-        </div>
-    </div>
-</section>
-
-<section id="detailed-background" class="section detailed-background">
-    <div class="section-container">
-        <h2 class="section-title">My Story</h2>
-        <div class="background-content">
-            <div class="background-text">
-                <p>
-                    I'm a passionate Software Engineer currently working at DoorDash in the San Francisco Bay Area,
-                    where I build systems that serve millions of users worldwide. My journey in technology has been
-                    driven by curiosity and a passion for creating innovative solutions to real-world problems.
-                </p>
-
-                <h3>Educational Background</h3>
-                <p>
-                    I hold a graduate degree from the University of California, San Diego, and completed my
-                    undergraduate studies at R.V. College of Engineering in Bangalore. My academic journey
-                    provided a strong foundation in computer science fundamentals and advanced topics.
-                </p>
-
-                <h3>Professional Experience</h3>
-                <p>
-                    At DoorDash, my expertise lies in algorithm design, scalable system architecture, and machine
-                    learning applications. I have a patent filed for "System and method for logistical assistance
-                    with data exchange," reflecting my commitment to innovative problem-solving in the logistics domain.
-                </p>
-
-                <h3>Achievements & Recognition</h3>
-                <div class="achievements-grid">
-                    <div class="achievement-item">
-                        <i class="fas fa-trophy"></i>
-                        <div>
-                            <h4>Programming Contests</h4>
-                            <p>Multiple awards in ACM ICPC and IEEE XTREME competitions</p>
-                        </div>
-                    </div>
-                    <div class="achievement-item">
-                        <i class="fas fa-patent"></i>
-                        <div>
-                            <h4>Patent Holder</h4>
-                            <p>Logistical data exchange systems innovation</p>
-                        </div>
-                    </div>
-                    <div class="achievement-item">
-                        <i class="fas fa-users"></i>
-                        <div>
-                            <h4>Professional Memberships</h4>
-                            <p>Active member of ACM, IEEE, and IAENG</p>
-                        </div>
-                    </div>
-                </div>
-
-                <h3>Technical Certifications</h3>
-                <div class="certifications">
-                    <div class="cert-item">Java Memory Management</div>
-                    <div class="cert-item">Complete Guide to ElasticSearch</div>
-                    <div class="cert-item">CockroachDB Certification</div>
-                </div>
-
-                <h3>Languages & Cultural Background</h3>
-                <p>
-                    I'm multilingual, speaking English, Hindi, and Marwadi natively, with elementary proficiency
-                    in Kannada. This linguistic diversity helps me connect with people from various backgrounds
-                    and cultures, bringing a global perspective to my work.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section cta-section">
-    <div class="section-container">
-        <div class="cta-content">
-            <h2>Let's Build Something Amazing Together</h2>
-            <p>I'm always interested in discussing new opportunities, innovative projects, or just geeking out about technology.</p>
-            <div class="cta-buttons-large">
-                <a href="/contact" class="btn btn-primary btn-large">
-                    <i class="fas fa-envelope"></i>
-                    Get In Touch
-                </a>
-                <a href="/blog" class="btn btn-secondary btn-large">
-                    <i class="fas fa-rss"></i>
-                    Read My Blog
-                </a>
-            </div>
-        </div>
+        
     </div>
 </section>
 
