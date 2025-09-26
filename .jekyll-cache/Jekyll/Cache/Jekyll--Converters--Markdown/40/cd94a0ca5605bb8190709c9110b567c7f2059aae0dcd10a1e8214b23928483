@@ -1,4 +1,4 @@
-I"$.<p>At scale, every millisecond matters. When your application serves millions of users across diverse network conditions and devices, traditional performance advice falls short. After optimizing page load performance for systems handling <strong>50M+ monthly requests</strong>, I’ve learned that sustainable performance improvements require a fundamentally different approach than what most guides suggest.</p>
+I"k.<p>At scale, every millisecond matters. When your application serves millions of users across diverse network conditions and devices, traditional performance advice falls short. After optimizing page load performance for systems handling <strong>50M+ monthly requests</strong>, I’ve learned that sustainable performance improvements require a fundamentally different approach than what most guides suggest.</p>
 
 <p>This isn’t about basic database indexing or adding Redis. We’ll take a systematic look at the architecture decisions, measurement strategies, and mobile-specific patterns that separate high-performing backend services from the rest.</p>
 
@@ -174,14 +174,22 @@
 
 <p><strong>References:</strong></p>
 
-<p>[1] Discord Engineering Blog - Scaling Message Fanout
-[2] Google Research - The Tail at Scale
-[3] Google SRE Book - Service Level Objectives
-[4] LinkedIn Engineering Blog - Adopting Brotli Compression
-[5] Facebook Engineering - Scaling and Optimizing for Request Volumes
-[6] AWS Best Practices - Caching Strategies
-[7] Netflix Tech Blog - JSON-to-UI Pipeline Optimization
-[8] Instagram Engineering - Scaling Feeds with Postgres Sharding
-[9] Use the Index, Luke! - SQL Performance Explained
-[10] PostgreSQL Performance Tips - Official Documentation</p>
+<p>[1] Discord Engineering Blog - Scaling Message Fanout <br />
+[2] Google Research - The Tail at Scale</p>
+
+<p>[3] Google SRE Book - Service Level Objectives</p>
+
+<p>[4] LinkedIn Engineering Blog - Adopting Brotli Compression</p>
+
+<p>[5] Facebook Engineering - Scaling and Optimizing for Request Volumes</p>
+
+<p>[6] AWS Best Practices - Caching Strategies</p>
+
+<p>[7] Netflix Tech Blog - JSON-to-UI Pipeline Optimization</p>
+
+<p>[8] Instagram Engineering - Scaling Feeds with Postgres Sharding</p>
+
+<p>[9] Use the Index, Luke! - SQL Performance Explained</p>
+
+<p>[10] PostgreSQL Performance Tips - Official Documentation</p>
 :ET

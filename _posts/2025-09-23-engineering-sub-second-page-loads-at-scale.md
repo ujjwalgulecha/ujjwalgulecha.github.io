@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Engineering Sub-Second Page Loads at Scale: A Systems Approach"
-date: 2024-09-23 14:00:00 -0800
+date: 2025-09-23 14:00:00 -0800
 categories: [performance, systems, engineering]
 tags: [performance-optimization, scalability, backend, distributed-systems, web-performance]
 description: "How we achieved sub-second page loads for 50M+ monthly requests through systematic performance optimization, going beyond basic caching to orchestrate a coherent high-performance system."
@@ -156,13 +156,13 @@ Whether you're building mobile apps, APIs, or distributed systems, the principle
 
 **References:**
 
-[1] Discord Engineering Blog - Scaling Message Fanout
-[2] Google Research - The Tail at Scale
-[3] Google SRE Book - Service Level Objectives
-[4] LinkedIn Engineering Blog - Adopting Brotli Compression
-[5] Facebook Engineering - Scaling and Optimizing for Request Volumes
-[6] AWS Best Practices - Caching Strategies
-[7] Netflix Tech Blog - JSON-to-UI Pipeline Optimization
-[8] Instagram Engineering - Scaling Feeds with Postgres Sharding
-[9] Use the Index, Luke! - SQL Performance Explained
-[10] PostgreSQL Performance Tips - Official Documentation
+[1] Discord Engineering Blog - Scaling Message Fanout <br>
+[2] Google Research - The Tail at Scale <br>
+[3] Google SRE Book - Service Level Objectives <br>
+[4] LinkedIn Engineering Blog - Adopting Brotli Compression <br>
+[5] Facebook Engineering - Scaling and Optimizing for Request Volumes <br>
+[6] AWS Best Practices - Caching Strategies <br>
+[7] Netflix Tech Blog - JSON-to-UI Pipeline Optimization <br>
+[8] Instagram Engineering - Scaling Feeds with Postgres Sharding <br>
+[9] Use the Index, Luke! - SQL Performance Explained <br>
+[10] PostgreSQL Performance Tips - Official Documentation <br>
