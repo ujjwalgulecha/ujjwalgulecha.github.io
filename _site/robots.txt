@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# XML Sitemap
+Sitemap: {{ site.url }}/sitemap.xml
+
+# Disallow crawling of development files and directories
+Disallow: /_sass/
+Disallow: /_layouts/
+Disallow: /_includes/
+Disallow: /assets/js/
+Disallow: /vendor/

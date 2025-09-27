@@ -1,4 +1,4 @@
-I"d.<p>At scale, every millisecond matters. When your application serves millions of users across diverse network conditions and devices, traditional performance advice falls short. After optimizing page load performance for systems handling <strong>50M+ monthly requests</strong>, I’ve learned that sustainable performance improvements require a fundamentally different approach than what most guides suggest.</p>
+I"�.<p>At scale, every millisecond matters. When your application serves millions of users across diverse network conditions and devices, traditional performance advice falls short. After optimizing page load performance for systems handling <strong>50M+ monthly requests</strong>, I’ve learned that sustainable performance improvements require a fundamentally different approach than what most guides suggest.</p>
 
 <p>This isn’t about basic database indexing or adding Redis. We’ll take a systematic look at the architecture decisions, measurement strategies, and mobile-specific patterns that separate high-performing backend services from the rest.</p>
 
@@ -10,7 +10,7 @@
 
 <p>Consider this: reducing your P50 latency from 200ms to 150ms sounds great, but if your P99 jumps from 500ms to 2s because of cache stampedes, you’ve made the user experience worse for the users who matter most—those on the edge of your performance envelope.</p>
 
-<p><strong>Real-world example</strong>: Discord scaled individual servers from tens of thousands of concurrent users to approaching two million concurrent users in the past few years. Their biggest challenge wasn’t individual slow queries—it was managing the quadratic scaling problem where fanout work grows exponentially with server size. With 100,000 people online, a single message becomes 10 billion notifications to deliver [1].</p>
+<p><strong>Real-world example</strong>: Discord scaled individual servers from tens of thousands of concurrent users to approaching two million concurrent users in the past few years. Their biggest challenge wasn’t individual slow queries—it was managing the quadratic scaling problem where fanout work grows exponentially with server size. With 100,000 people online, a single message becomes 10 billion notifications to deliver <a href="https://discord.com/blog/maxjourney-pushing-discords-limits-with-a-million-plus-online-users-in-a-single-server">[1]</a>.</p>
 
 <hr />
 
@@ -174,22 +174,14 @@
 
 <p><strong>References:</strong></p>
 
-<p>[1] Discord Engineering Blog - Scaling Message Fanout
-[2] Google Research - The Tail at Scale</p>
-
-<p>[3] Google SRE Book - Service Level Objectives</p>
-
-<p>[4] LinkedIn Engineering Blog - Adopting Brotli Compression</p>
-
-<p>[5] Facebook Engineering - Scaling and Optimizing for Request Volumes</p>
-
-<p>[6] AWS Best Practices - Caching Strategies</p>
-
-<p>[7] Netflix Tech Blog - JSON-to-UI Pipeline Optimization</p>
-
-<p>[8] Instagram Engineering - Scaling Feeds with Postgres Sharding</p>
-
-<p>[9] Use the Index, Luke! - SQL Performance Explained</p>
-
-<p>[10] PostgreSQL Performance Tips - Official Documentation</p>
+<p>[1] Discord Engineering Blog - Scaling Message Fanout <br />
+[2] Google Research - The Tail at Scale <br />
+[3] Google SRE Book - Service Level Objectives <br />
+[4] LinkedIn Engineering Blog - Adopting Brotli Compression <br />
+[5] Facebook Engineering - Scaling and Optimizing for Request Volumes <br />
+[6] AWS Best Practices - Caching Strategies <br />
+[7] Netflix Tech Blog - JSON-to-UI Pipeline Optimization <br />
+[8] Instagram Engineering - Scaling Feeds with Postgres Sharding <br />
+[9] Use the Index, Luke! - SQL Performance Explained <br />
+[10] PostgreSQL Performance Tips - Official Documentation <br /></p>
 :ET
