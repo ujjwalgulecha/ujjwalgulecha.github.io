@@ -5,6 +5,7 @@ date: 2025-09-23 14:00:00 -0800
 categories: [performance, systems, engineering]
 tags: [performance-optimization, scalability, backend, distributed-systems, web-performance]
 description: "Make your pages load faster through systematic performance optimization, going beyond basic caching to orchestrate a coherent high-performance system."
+image: /assets/images/social-card.svg
 ---
 
 At scale, every millisecond matters. When your application serves millions of users across diverse network conditions and devices, traditional performance advice falls short. After optimizing page load performance for systems handling **50M+ monthly requests**, I've learned that sustainable performance improvements require a fundamentally different approach than what most guides suggest.
