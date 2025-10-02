@@ -47,6 +47,14 @@ social:
     - https://github.com/ujjwalgulecha
     - https://linkedin.com/in/ujjwalgulecha
 
+# Social media settings
+twitter:
+  username: ujjwalgulecha
+  card: summary_large_image
+
+# Logo for structured data
+logo: /assets/images/social-card.svg
+
 # Default front matter
 defaults:
   - scope:
@@ -55,11 +63,13 @@ defaults:
     values:
       layout: "post"
       author: "Ujjwal Gulecha"
+      image: /assets/images/social-card.svg
   - scope:
       path: ""
       type: "pages"
     values:
       layout: "default"
+      image: /assets/images/social-card.svg
 
 # Markdown processor
 markdown: kramdown

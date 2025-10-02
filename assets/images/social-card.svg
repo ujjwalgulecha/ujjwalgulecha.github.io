@@ -1,0 +1,26 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <circle cx="600" cy="315" r="200" fill="url(#gradient)" opacity="0.1"/>
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#1e40af"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Main content -->
+  <text x="600" y="280" text-anchor="middle" fill="#f8fafc" font-family="Inter, system-ui, sans-serif" font-size="48" font-weight="700">
+    Ujjwal Gulecha
+  </text>
+
+  <text x="600" y="320" text-anchor="middle" fill="#94a3b8" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="400">
+    Software Engineer at Anthropic
+  </text>
+
+  <text x="600" y="380" text-anchor="middle" fill="#cbd5e1" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="400">
+    Building innovative solutions to complex problems
+  </text>
+
+  <!-- Bottom accent -->
+  <rect x="0" y="600" width="1200" height="30" fill="url(#gradient)"/>
+</svg>
